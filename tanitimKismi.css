@@ -1,3 +1,18 @@
 .tanitimFoto{
-    padding: 65px;
+    height: 500px;
+    width: 70%;
+    border-radius: 20px;
+}
+
+.fotoAlani{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tanitimBolumuText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

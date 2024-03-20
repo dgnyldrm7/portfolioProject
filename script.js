@@ -37,3 +37,44 @@ window.addEventListener('scroll', function() {
 
 
 
+//Sayac kısmıdır
+let counterStarted = false;
+
+window.addEventListener('DOMContentLoaded', function() {
+    checkCounter();
+});
+
+window.addEventListener('scroll', function() {
+    checkCounter();
+});
+
+function checkCounter() {
+    if (!counterStarted && window.scrollY > 950) {
+        startCounter();
+        counterStarted = true;
+    }
+}
+
+function startCounter() {
+    let valueDisplays = document.querySelectorAll(".num");
+    let interval = 4000;
+    valueDisplays.forEach((valueDisplay) => {
+        let startValue = 0;
+        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+        let duration = Math.floor(interval / endValue);
+        let counter = setInterval(function () {
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if (startValue == endValue) {
+                clearInterval(counter);
+            }
+        }, duration);
+    });
+}
+
+
+
+
+
+
+
