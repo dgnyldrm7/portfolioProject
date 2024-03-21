@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Questrial&display=swap');
+
 @import url('boyu.css');
 
 @import url('carousel.css');
@@ -12,10 +14,14 @@
 
 @import url('products.css');
 
+@import url('navbar.css');
+
 * {
     padding: 0;
     margin: 0;
-    font-family: "Advent Pro", sans-serif;
+    /* font-family: "Advent Pro", sans-serif; */
+    font-family: "Questrial", sans-serif;
+    font-style: normal;
     box-sizing: border-box;
 }
 
@@ -35,9 +41,23 @@
     height: 100px;
 }
 
-.nav-item:hover{
-    border-bottom: 1px solid black;
-    transition-duration: 0.2s;
-}
 
 
+
+
+
+
+
+
+.divs{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+   height: 300px;
+   width: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(to right, #1cd8d2, #93edc7);
+   color: white;
+   margin: 100px 0;
+   border-radius: 7px;
+ }
