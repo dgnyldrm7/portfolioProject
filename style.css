@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Questrial&display=swap');
 
+@import url('https://db.onlinewebfonts.com/c/5fd82f3bb8dcfc3ce611fab541b92241?family=DIN+Pro+Medium');
+
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Questrial&display=swap');
+
 @import url('boyu.css');
 
 @import url('carousel.css');
@@ -20,7 +24,7 @@
     padding: 0;
     margin: 0;
     /* font-family: "Advent Pro", sans-serif; */
-    font-family: "Questrial", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-style: normal;
     box-sizing: border-box;
 }
@@ -43,8 +47,18 @@
 
 
 
+.dgn{
+    text-decoration: none;
+    color: black;
+}
 
+.dgn:hover{
+    color: black;
+}
 
+.footerim{
+    padding: 50px;
+}
 
 
 

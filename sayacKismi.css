@@ -1,12 +1,14 @@
 .sayacKismi{
     position: relative;
-    top: 50px;
+    top: 60px;
     width: 100%; /* Örnek genişlik */
-    height: 500px; /* Örnek yükseklik */
-    background-image: url('https://www.msbalfa.com.tr/wp-content/uploads/2023/02/pngwing.com-2-3.png');
+    height: 700px; /* Örnek yükseklik */
+    background-image: url('images/worldMAP.png');
+    background-color: rgba(255, 255, 255, 0.5); /* Beyaz renk, %50 saydamlık */
     background-repeat: no-repeat; /* Resmi tekrar etme */
     background-size: cover; /* Resmi arka plana sığdırma */
     background-position: center; /* Resmin konumu */
+    padding: 65px;
 }
 
 .wrapper {
