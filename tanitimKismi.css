@@ -1,3 +1,23 @@
+.urunlerUzunlamasi{
+    position: relative;
+    z-index: -1;
+    height: 0px;
+}
+
+.içerik{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+
+
 .tanitimFoto{
     height: 500px;
     width: 70%;
@@ -16,3 +36,9 @@
     align-items: center;
     justify-content: center;
 }
+
+.ssss:hover
+{
+    box-shadow: 0px 0px 0px 2px;
+}
+
