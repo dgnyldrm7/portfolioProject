@@ -34,9 +34,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-
-
-
 //Sayac kısmıdır
 let counterStarted = false;
 

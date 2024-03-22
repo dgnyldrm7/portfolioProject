@@ -42,3 +42,19 @@
     justify-content: center;
 }
 
+@media (max-width: 760px) {
+    .tanitimTersten {
+        flex-direction: column-reverse; /* Sütunları ters sırayla düzenle */
+    }
+
+    .tanitimBolumuText {
+        order: 2; /* İlk sütunu ikinci sütunun altına taşı */
+        text-align: center;
+    }
+
+    .tanitimFoto:hover{
+        transform:none;
+        box-shadow: none;
+    }
+}
+

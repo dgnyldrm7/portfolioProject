@@ -9,7 +9,7 @@ a::before{
     left: 0;
     width: 0;
     height: 3px;
-    background: #000000;
+    background: #343a89;
     transition: .6s;
 }
 

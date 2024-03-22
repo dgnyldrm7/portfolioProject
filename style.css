@@ -78,3 +78,22 @@
    border-radius: 7px;
  }
 
+
+
+ /* WebKit tabanlı tarayıcılarda kaydırma çubuğunu özelleştirme */
+::-webkit-scrollbar {
+    width: 12px; /* Kaydırma çubuğu genişliği */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Kaydırma çubuğunun arka plan rengi */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #343a89; /* Kaydırma çubuğu rengi */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555555; /* Kaydırma çubuğu üzerine gelindiğindeki renk */
+}
+

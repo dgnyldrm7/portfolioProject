@@ -20,3 +20,18 @@
 
 }
 
+
+@media (max-width: 575px) {
+    .yandanBosluk{
+        width: 100%;
+        padding: 60px;
+    }
+
+    .akc:hover{
+        transform: none;
+        box-shadow: none;
+        transition: none;
+    
+    }
+
+}
