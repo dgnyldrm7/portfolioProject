@@ -24,7 +24,7 @@ setInterval(otomatikIilerleme, 4000);
 
 
 
-
+/*
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar');
     if (window.scrollY > 0) {
@@ -33,6 +33,25 @@ window.addEventListener('scroll', function() {
         navbar.style.boxShadow = "0 0px 0px 0px";
     }
 });
+*/
+
+//yukarı çık butonu işlevi
+window.addEventListener('scroll' , function(){
+    const topYukari = this.document.querySelector(".topYukari");
+    if ( window.scrollY > 180){
+        topYukari.style.display = "flex";
+
+        topYukari.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'}) });
+    }
+    else{
+        topYukari.style.display = "none";
+    }
+})
+
+
 
 //Sayac kısmıdır
 let counterStarted = false;
