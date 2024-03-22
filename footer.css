@@ -1,0 +1,56 @@
+@media (max-width: 1200px){
+    .sosyalMedia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logoFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logFoot{
+        width: 250px;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .metinArea{
+        text-align: center;
+    }
+
+    .bottomFooter{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        padding: 15px;
+        text-align: center;
+    }
+
+
+}
+
+
+@media (min-width:1201px) {
+    .sosyalMedia{
+        text-align: right;
+    }
+
+    .sosyalIcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 15px;
+    }
+
+    .bottomFooter{
+
+        text-align: center;
+        padding-left: 20px;
+
+    }
+}
