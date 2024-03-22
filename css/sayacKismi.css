@@ -3,7 +3,7 @@
     top: 60px;
     width: 100%; /* Örnek genişlik */
     height: 700px; /* Örnek yükseklik */
-    background-image: url('images/worldMAP.png');
+    background-image: url('../images/worldMAP.png');
     background-color: rgba(255, 255, 255, 0.5); /* Beyaz renk, %50 saydamlık */
     background-repeat: no-repeat; /* Resmi tekrar etme */
     background-size: cover; /* Resmi arka plana sığdırma */
