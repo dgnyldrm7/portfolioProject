@@ -22,6 +22,8 @@
 
 @import url('footer.css');
 
+@import url('newCard.css');
+
 * {
     padding: 0;
     margin: 0;

@@ -1,0 +1,14 @@
+.newCard{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow:  23px 23px 34px rgba(0, 0, 0, 0.1), -4px -4px 45px rgba(0, 0, 0, 0.1);;
+    margin: auto;
+}
+
+.yandanGenislik{
+    margin: auto;
+}
+
+.ahaha{
+    margin-top: 150px;
+}

@@ -17,23 +17,9 @@ function otomatikIilerleme() {
     let slides = document.querySelectorAll('.slides');
     slider.appendChild(slides[0]);
 }
-
-setInterval(otomatikIilerleme, 4000);
-
+setInterval(otomatikIilerleme, 5000);
 
 
-
-
-/*
-window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.navbar');
-    if (window.scrollY > 0) {
-        navbar.style.boxShadow = "0 1px 25px -19px";
-    } else {
-        navbar.style.boxShadow = "0 0px 0px 0px";
-    }
-});
-*/
 
 //yukarı çık butonu işlevi
 window.addEventListener('scroll' , function(){
@@ -70,7 +56,6 @@ function checkCounter() {
         counterStarted = true;
     }
 }
-
 function startCounter() {
     let valueDisplays = document.querySelectorAll(".num");
     let interval = 4000;
