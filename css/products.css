@@ -8,9 +8,9 @@
 
 .akc{
     transition: transform 0.5s, box-shadow 2s;
-
-    
+    height: 370px;
     margin: 10px;
+    border-radius: 15px;
 }
 
 .akc:hover{

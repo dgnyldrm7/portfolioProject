@@ -21,6 +21,8 @@ setInterval(otomatikIilerleme, 5000);
 
 
 
+
+
 //yukarı çık butonu işlevi
 window.addEventListener('scroll' , function(){
     const topYukari = this.document.querySelector(".topYukari");
@@ -73,6 +75,41 @@ function startCounter() {
     });
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Aşağı inerkenki kısım
+window.addEventListener('scroll', function() {
+    var manifestLines = document.querySelectorAll('.ManifestLine');
+
+    // Her ManifestLine öğesini kontrol eder
+    manifestLines.forEach(function(line) {
+        var bounding = line.getBoundingClientRect();
+
+        // Eğer öğe ekranın üst kısmından %50'den fazlası görünüyorsa
+        if (bounding.top < window.innerHeight * 0.5) {
+            // Tüm öğelerden 'is-active' sınıfını kaldırır
+            manifestLines.forEach(function(line) {
+                line.classList.remove('is-active');
+            });
+            
+            // Aktif olan öğeye 'is-active' sınıfını ekler
+            line.classList.add('is-active');
+        }
+    });
+});
 
 
 
