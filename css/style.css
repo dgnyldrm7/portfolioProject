@@ -167,26 +167,259 @@
 
 
 
-.ContentZone {
+
+
+
+#jumpBtn {
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px;
+  }
+  
+  #jumpBtn:hover {
+    background-color: #0056b3;
+  }
+
+
+  .popo{
+      display: flex;
+      justify-content: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Manifest yeri */
+  .CMSPictureWithVideo {
     position: relative;
-    display: flex;
-    flex-direction: column;
-   
+    z-index: 0;
+    width: 100%;
+    height: 100%
 }
 
+.CMSPictureWithVideo__picture {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%
+}
 
+.CMSPictureWithVideo__picture_end {
+    z-index: 2
+}
 
+.CMSPictureWithVideo:not(.is-ended) .CMSPictureWithVideo__picture_end {
+    display: none
+}
+
+.CMSPictureWithVideo__video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.CMSPictureWithVideo.is-editMode .CMSPictureWithVideo__video {
+    -webkit-clip-path: polygon(50% 0,100% 0,100% 100%,0 100%);
+    clip-path: polygon(50% 0,100% 0,100% 100%,0 100%)
+}
+
+.VideoControlButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #fff;
+    border-radius: 50%
+}
+
+.VideoControlButton__icon {
+    width: 32px;
+    fill: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%
+}
+
+.Component28v0.Component28v0_isModal {
+    height: 100%
+}
+
+.Component28v0__inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9
+}
+
+.Component28v0__overlay {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    color: #fff
+}
+
+.Component28v0__overlay_withMedia .Component28v0__play {
+    position: unset;
+    transform: none;
+    margin-left: 32px;
+    order: 2
+}
+
+.Component28v0__media {
+    display: none
+}
+
+@media screen and (min-width: 670px) {
+    .Component28v0__media {
+        z-index:1;
+        display: block;
+        max-width: 30%;
+        margin-left: 32px;
+        color: #fff
+    }
+}
+
+.Component28v0__mediaTitle {
+    margin-bottom: 8px;
+    font-size: 2.4rem;
+    font-weight: 700
+}
+
+.Component28v0__mediaBodyCopy {
+    font-size: 1.4rem;
+    line-height: normal
+}
+
+.Component28v0__player {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+.Component28v0__updateCookiesContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 8px;
+    background-color: #000;
+    text-align: center;
+    aspect-ratio: 16/9
+}
+
+@media screen and (min-width: 670px) {
+    .Component28v0__updateCookiesContainer {
+        padding:24px
+    }
+}
+
+.Component28v0__updateCookiesNotification {
+    margin: 0 8px;
+    color: #fff;
+    font-size: 1.4rem
+}
+
+.Component28v0__updateCookiesCtas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    padding: 0 8px;
+    margin: 16px auto 0;
+    gap: 8px;
+    flex-wrap: wrap
+}
+
+@media screen and (min-width: 670px) {
+    .Component28v0__updateCookiesCtas {
+        flex-direction:row;
+        padding: 0 36px
+    }
+}
+
+.Component28v0__updateCookiesCta {
+    padding: 16px
+}
+
+.Component28v0__button {
+    position: absolute;
+    right: 24px;
+    bottom: 24px
+}
+
+.Component28v0__image {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
 
 .ManifestLine {
-    font-size: 2.6rem;
+    font-size: 3.6rem;
     line-height: 3.4rem;
     white-space: pre-line;
-    font-weight: 400;
+    font-weight: 700;
     opacity: .3;
     transition: opacity .5s cubic-bezier(.645,.045,.355,1);
     -webkit-user-select: none;
-    user-select: none;
-  
+    user-select: none
 }
 
 @media screen and (min-width: 670px) {
@@ -198,7 +431,7 @@
 
 @media screen and (min-width: 1024px) {
     .ManifestLine {
-        font-size:5rem;
+        font-size:8rem;
         line-height: 7.6rem
     }
 }
@@ -207,12 +440,105 @@
     opacity: 1
 }
 
+.ManifestScroll {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 224px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    transition: opacity .4s ease-in-out;
+    opacity: 0
+}
+
+.ManifestScroll:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0,0,0,.8),transparent)
+}
+
+@media screen and (min-width: 670px) {
+    .ManifestScroll {
+        font-size:1.6rem;
+        line-height: 1
+    }
+}
+
+.ManifestScroll.is-visible {
+    opacity: 1
+}
+
+.ManifestScroll.is-visible .ManifestScroll__arrow {
+    animation: animArrow 3s linear .6s infinite forwards
+}
+
+.ManifestScroll:is(.is-editMode) {
+    position: relative;
+    opacity: 1
+}
+
+.ManifestScroll__wrap {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 80px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+@media screen and (min-width: 1024px) {
+    .ManifestScroll__wrap {
+        bottom:22px
+    }
+}
+
+@keyframes animArrow {
+    0% {
+        transform: translate3d(0,-10px,0);
+        opacity: 0
+    }
+
+    10% {
+        transform: translateZ(0);
+        opacity: 1
+    }
+
+    90% {
+        transform: translateZ(0);
+        opacity: 1
+    }
+
+    to {
+        transform: translate3d(0,10px,0);
+        opacity: 0
+    }
+}
+
+.ManifestScroll__arrow {
+    width: 17px;
+    margin-top: 4px;
+    fill: currentColor
+}
+
+@media screen and (min-width: 670px) {
+    .ManifestScroll__arrow {
+        margin-top:8px
+    }
+}
 
 .Manifest {
     --Manifest-progress: 0;
     position: relative;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: #000;
+    color: #fff
 }
 
 @media screen and (min-width: 1280px) {
@@ -276,14 +602,161 @@
     }
 }
 
-.Manifest__cont {
+.Manifest__cont,.Manifest__pinned {
     position: relative
+}
+
+.Manifest__black {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    transition: opacity .6s ease-out
+}
+
+.Manifest__black.is-shown {
+    opacity: 1
+}
+
+.Manifest__car {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    width: 100%;
+    animation-delay: .2s
+}
+
+.Manifest__car .Manifest__carImg {
+    height: 100%
+}
+
+.Manifest__car.is-behind-text {
+    z-index: 2
 }
 
 
 
+.Manifest__hero.is-fixed {
+    position: fixed
+}
 
+@media screen and (min-width: 1024px) {
+    .Manifest__hero.is-fixed {
+        position:absolute
+    }
+}
 
+@media screen and (min-width: 1024px) {
+    .Manifest__hero {
+        transform:translate(-50%,calc((1 - var(--Manifest-progress))*40px - 50%));
+        top: 50%;
+        padding: 0;
+        margin: 0
+    }
+}
+
+@keyframes animLine {
+    0% {
+        transform: translateY(150px);
+        opacity: 0
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+.Manifest__heroStrapline {
+    font-size: 2rem;
+    line-height: 2rem;
+    animation: animLine 1.7s cubic-bezier(.645,.045,.355,1) forwards
+}
+
+.Manifest__heroStrapline .Manifest__heroStraplineB {
+    color: hsla(0,0%,100%,.5)
+}
+
+@media screen and (min-width: 670px) {
+    .Manifest__heroStrapline {
+        font-size:2.4rem;
+        line-height: 2.4rem
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Manifest__heroStrapline {
+        font-size:3.2rem;
+        line-height: 2.8rem
+    }
+}
+
+.Manifest__heroTitle {
+    transform: translateY(150px);
+    font-size: 7.2rem;
+    line-height: 6.8rem;
+    opacity: 0;
+    animation: animLine 1.2s cubic-bezier(.645,.045,.355,1) forwards;
+    animation-delay: .5s
+}
+
+.Manifest__heroTitle .Manifest__heroTitleB {
+    color: hsla(0,0%,100%,.5)
+}
+
+.Manifest__heroTitle.is-small {
+    font-size: 5.3rem;
+    line-height: 5rem
+}
+
+.Manifest__heroTitle.is-large {
+    font-size: 8.2rem
+}
+
+@media screen and (min-width: 670px) {
+    .Manifest__heroTitle {
+        font-size:13.2rem;
+        line-height: 12.4rem
+    }
+
+    .Manifest__heroTitle.is-small {
+        font-size: 8.6rem;
+        line-height: 7.4rem
+    }
+
+    .Manifest__heroTitle.is-large {
+        font-size: 14.9rem
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Manifest__heroTitle {
+        margin-top:12px;
+        font-size: 22rem;
+        line-height: 15rem
+    }
+
+    .Manifest__heroTitle.is-small {
+        font-size: 16rem;
+        line-height: 13rem
+    }
+
+    .Manifest__heroTitle.is-medium {
+        line-height: 18rem
+    }
+
+    .Manifest__heroTitle.is-large {
+        font-size: 25rem;
+        line-height: 20rem
+    }
+}
+
+.Manifest__heroTitle.has-accent {
+    margin-top: 10px
+}
 
 .Manifest__heroButton {
     transform: translateY(150px);
@@ -312,12 +785,64 @@
     }
 }
 
+.Manifest__legalMentions {
+    padding-bottom: 24px;
+    font-size: 1.3rem;
+    line-height: 2.4rem
+}
 
+@media screen and (min-width: 1024px) {
+    .Manifest__legalMentions {
+        padding-bottom:32px;
+        line-height: 1.4rem
+    }
+}
 
+.Manifest__imageBackground2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0
+}
 
+.Manifest__imageBackground2.is-visible {
+    z-index: 1;
+    opacity: 1
+}
 
+.Manifest__button {
+    position: fixed;
+    right: 0;
+    bottom: 160px;
+    left: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity .3s
+}
 
+.Manifest__button.is-visible {
+    opacity: 1
+}
 
+@media screen and (min-width: 1024px) {
+    .Manifest__button {
+        right:40px;
+        bottom: 32px;
+        left: auto;
+        width: auto;
+        margin: 0
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .Manifest__button {
+        right:64px
+    }
+}
 
 
 

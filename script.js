@@ -116,3 +116,13 @@ window.addEventListener('scroll', function() {
 
 
 
+
+
+
+function jumpToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+  
